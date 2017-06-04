@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseMgr.View.AddVitals">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
+        <!--<Image Source="AppLogo.png" />
+        <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"/>-->
+        <Label Text="Enter Expense" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="Large" />
+        <Entry Placeholder ="Price" Style="{StaticResource EntryTrigger}"
+      Text="{Binding Price}" Keyboard="Numeric"  HorizontalOptions="FillAndExpand" />
+        <Entry Placeholder ="Quantity" Style="{StaticResource EntryTrigger}"
+      Text="{Binding Quantity}" Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+        <Entry Placeholder ="Total Amount" Style="{StaticResource EntryTrigger}"
+     Text="{Binding Total}" Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+        <Button Text ="Save" Style="{StaticResource GenButton}" Command="{Binding SaveVitalsCommand}" />
+
+    </StackLayout>
+
+</ContentPage>
